@@ -166,11 +166,10 @@
         </figure>
         <div class="content has-text-justified">
           <p>
-            Aerial transportation using quadrotors with cable-suspended payloads holds great potential for applications in disaster response, logistics, and infrastructure maintenance. However, their hybrid and underactuated dynamics pose significant control and perception challenges.
-            Traditional approaches often assume a taut cable condition, limiting their effectiveness in real-world applications where slack-to-taut transitions occur due to disturbances. We introduce ES-HPC-MPC, a model predictive control framework that enforces exponential stability and perception-constrained control under hybrid dynamics.
+            MAVs have great potential to assist humans in complex tasks, with applications ranging from environmental monitoring to logistics and emergency response. Their agility and versatility make them ideal for operations in complex and dynamic environments.  However, precise control remains a critical challenge, especially in the presence of underactuated dynamics and tight coupling between translation and rotation of quadrotors.
           </p>
           <p>
-            Our method leverages Exponentially Stabilizing Control Lyapunov Functions (ES-CLFs) to enforce stability during the tasks and Control Barrier Functions (CBFs) to maintain the payload within the onboard camera’s field of view (FoV). We validate our method through both simulation and real-world experiments, demonstrating stable trajectory tracking and reliable payload perception. We validate that our method maintains stability and satisfies perception constraints while tracking dynamically infeasible trajectories and when the system is subjected to hybrid mode transitions caused by unexpected disturbances.
+            In this work, we propose a novel NMPC framework based on dual-quaternions (DQ-NMPC) for quadrotor flight. By representing both quadrotor dynamics and the cost function directly on the dual-quaternion manifold, our approach enables a compact and globally non-singular formulation that captures the quadrotor coupled dynamics. We validate our approach through simulations and real-world experiments, demonstrating better numerical conditioning and significantly improved tracking performance, with reductions in position and orientation errors of up to 56.11\% and 56.77\%, respectively, compared to a conventional baseline NMPC method. Furthermore, our controller successfully handles aggressive trajectories, reaching maximum speeds up to 13.66 m/s, under which the baseline controller fails.
           </p>
         </div>
       </div>
