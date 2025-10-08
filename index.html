@@ -173,14 +173,14 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <figure class=\"image\" style=\"width:80%; margin: 1rem auto;\">
-          <img src="cover.png" alt=\"Illustration of quadrotor with cable-suspended payload\">
+          <img src="Cover.png" alt=\"Illustration of quadrotor with cable-suspended payload\">
         </figure>
         <div class="content has-text-justified">
           <p>
-            MAVs have great potential to assist humans in complex tasks, with applications ranging from environmental monitoring to logistics and emergency response. Their agility and versatility make them ideal for operations in complex and dynamic environments.  However, precise control remains a critical challenge, especially in the presence of underactuated dynamics and tight coupling between translation and rotation of quadrotors.
+            MAVs have great potential to assist humans in complex tasks, with applications ranging from logistics to emergency response. Their agility makes them ideal for operations in complex and dynamic environments. However, achieving precise control in agile flights remains a significant challenge, particularly due to the underactuated nature of quadrotors and the strong coupling between their translational and rotational dynamics.
           </p>
           <p>
-            In this work, we propose a novel NMPC framework based on dual-quaternions (DQ-NMPC) for quadrotor flight. By representing both quadrotor dynamics and the cost function directly on the dual-quaternion manifold, our approach enables a compact and globally non-singular formulation that captures the quadrotor coupled dynamics. We validate our approach through simulations and real-world experiments, demonstrating better numerical conditioning and significantly improved tracking performance, with reductions in position and orientation errors of up to 56.11\% and 56.77\%, respectively, compared to a conventional baseline NMPC method. Furthermore, our controller successfully handles aggressive trajectories, reaching maximum speeds up to 13.66 m/s, under which the baseline controller fails.
+           In this work, we propose a novel NMPC framework based on dual-quaternions (DQ-NMPC) for quadrotor flight. By representing both quadrotor dynamics and the pose error directly on the dual-quaternion manifold, our approach enables a compact and globally non-singular formulation that captures the quadrotor coupled dynamics. We validate our approach through simulations and real-world experiments, demonstrating better numerical conditioning and significantly improved tracking performance, with reductions in position and orientation errors of up to 56.11% and 56.77%, compared to a conventional baseline NMPC method. Furthermore, our controller successfully handles aggressive trajectories, reaching maximum speeds up to 13.66 m/s and max accelerations up to 4.2 g, under which the baseline controller fails.
           </p>
         </div>
       </div>
